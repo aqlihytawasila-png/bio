@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#3a5a40" name="theme-color"/>
+<meta content="Materi BioSTEMedia tentang definisi dan tingkat keanekaragaman hayati." name="description"/>
+<title>BioSTEMedia — Definisi dan Tingkat Keanekaragaman Hayati</title>
+<style>
+    :root {
+      --green-900: #274b31;
+      --green-800: #31563a;
+      --green-700: #38761d;
+      --green-600: #527c43;
+      --green-100: #edf3e9;
+      --paper: #f7f7f2;
+      --ink: #243127;
+      --muted: #667368;
+      --line: #e0e6dc;
+      --card: #fff;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(28, 49, 33, .07);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px; line-height: 1.72; overflow-wrap: anywhere;
+      -webkit-text-size-adjust: 100%;
+    }
+    a { color: var(--green-700); text-underline-offset: 3px; }
+    .topbar { background: var(--green-800); color: #fff; }
+    .topbar-inner { width: min(100% - 32px, 1000px); margin: auto; min-height: 58px; display:flex; align-items:center; gap:12px; }
+    .brand-mark { display:grid; place-items:center; width:35px; height:35px; border-radius:11px; font-weight:850; font-size:12px; letter-spacing:-.7px; background:#f1f5eb; color:var(--green-800); flex:none; }
+    .brand-name { font-weight:800; letter-spacing:.1px; line-height:1.15; }
+    .brand-sub { font-size:11px; opacity:.78; display:block; margin-top:3px; font-weight:500; letter-spacing:.2px; }
+    .hero { background:linear-gradient(145deg, #edf3e9 0%, #f8f7f1 85%); border-bottom:1px solid var(--line); }
+    .hero-inner { width:min(100% - 32px, 900px); margin:auto; padding:28px 0 26px; }
+    .eyebrow { color:var(--green-700); text-transform:uppercase; font-size:11px; font-weight:800; letter-spacing:1.35px; margin:0 0 9px; }
+    h1 { color:var(--green-900); font-size:clamp(27px, 6.5vw, 43px); line-height:1.15; letter-spacing:-1px; margin:0; max-width:780px; }
+    .hero-desc { margin:14px 0 0; max-width:680px; color:#526453; font-size:15px; line-height:1.65; }
+    .jump-wrap { background:rgba(247,247,242,.96); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
+    .jump-nav { display:flex; gap:8px; overflow-x:auto; padding:11px 16px; width:min(100%, 1000px); margin:auto; scrollbar-width:none; }
+    .jump-nav::-webkit-scrollbar, .gallery::-webkit-scrollbar { display:none; }
+    .jump-nav a { color:var(--green-800); white-space:nowrap; text-decoration:none; border:1px solid #d8e3d3; background:#fff; padding:6px 12px; border-radius:999px; font-size:12px; font-weight:700; }
+    .jump-nav a:focus-visible, a:focus-visible, button:focus-visible { outline:3px solid #a5c793; outline-offset:3px; }
+    main { width:min(100% - 24px, 900px); margin:22px auto 64px; }
+    .content-block { margin:0 0 17px; }
+    .content-block p { margin:0 0 15px; }
+    .content-block p:last-child { margin-bottom:0; }
+    .content-block > p, .content-block > ul, .content-block > ol, .content-block > blockquote,
+    .content-block > h3 { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:17px 17px; box-shadow:0 3px 13px rgba(30,50,34,.025); }
+    .content-block > p + p { margin-top:11px; }
+    .content-block ul, .content-block ol { padding-left:38px; }
+    .content-block li { padding-left:3px; margin:0 0 9px; }
+    .heading-block { margin:29px 0 14px; }
+    h2 { font-size:clamp(21px, 5vw, 29px); line-height:1.24; letter-spacing:-.45px; margin:0; padding:0 0 0 13px; border-left:5px solid var(--green-700); color:var(--green-900); }
+    h3 { font-size:19px; line-height:1.3; color:var(--green-900); }
+    strong { color:#2d4f32; }
+    .article-figure { margin:17px 0 21px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:10px; overflow:hidden; box-shadow:var(--shadow); }
+    .article-figure img { display:block; width:100%; height:auto; object-fit:contain; border-radius:11px; cursor:zoom-in; }
+    .article-figure .figure-table { max-height:78vh; object-fit:contain; background:#fff; }
+    .article-figure a { display:block; }
+    figcaption { padding:9px 5px 2px; color:var(--muted); font-size:12px; line-height:1.45; }
+    figcaption p { margin:0 0 3px; }
+    figcaption p:first-child { color:var(--green-900); font-weight:700; }
+    figcaption a { display:inline; }
+    .gallery { display:flex; gap:12px; overflow-x:auto; margin:18px 0 22px; padding:2px 1px 12px; scroll-snap-type:x mandatory; scrollbar-width:none; }
+    .gallery-card { flex:0 0 min(78%, 290px); width:min(78%, 290px); min-width:0; margin:0; background:#fff; border:1px solid var(--line); border-radius:16px; padding:8px; box-shadow:var(--shadow); scroll-snap-align:start; }
+    .gallery-card img { display:block; width:100%; height:280px; object-fit:cover; border-radius:11px; background:#edf0e9; }
+    .gallery-card figcaption { padding:10px 3px 4px; font-size:12px; }
+    .gallery--wide .gallery-card { flex-basis:min(82%, 350px); width:min(82%, 350px); }
+    .gallery--wide .gallery-card img { height:auto; aspect-ratio:1.5; object-fit:cover; }
+    .resource-card { display:flex; align-items:center; gap:11px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:13px; margin:0 0 17px; box-shadow:var(--shadow); }
+    .resource-icon { display:grid; place-items:center; flex:none; width:41px; height:41px; border-radius:12px; background:#e8f0e4; color:var(--green-800); font-size:11px; font-weight:900; }
+    .resource-copy { min-width:0; display:flex; flex-direction:column; line-height:1.35; }
+    .resource-copy strong { font-size:13px; }
+    .resource-copy span { font-size:11px; color:var(--muted); margin-top:4px; }
+    .resource-link { margin-left:auto; flex:none; color:var(--green-800); font-size:12px; font-weight:800; text-decoration:none; border:1px solid #d8e3d3; border-radius:999px; padding:7px 10px; }
+    .article-figure:has(img[src*="unnamed(1).png"]), .article-figure:has(img[src*="unnamed(14).png"]) { background:transparent; border:none; box-shadow:none; padding:0; }
+    .article-figure:has(img[src*="unnamed(1).png"]) img, .article-figure:has(img[src*="unnamed(14).png"]) img { border-radius:14px; }
+    .footer { width:min(100% - 32px, 900px); margin:0 auto; border-top:1px solid var(--line); padding:18px 0 30px; color:var(--muted); font-size:12px; }
+    .to-top { position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:6; width:42px; height:42px; display:grid; place-items:center; border-radius:50%; color:#fff; background:var(--green-800); border:0; box-shadow:0 5px 15px rgba(10,30,15,.25); font-size:19px; cursor:pointer; }
+    dialog { padding:0; border:0; border-radius:16px; max-width:min(96vw,1100px); max-height:92dvh; background:#142016; box-shadow:0 18px 65px rgba(0,0,0,.4); }
+    dialog::backdrop { background:rgba(12,20,13,.82); }
+    .viewer-inner { position:relative; padding:12px; }
+    .viewer-inner img { display:block; max-width:calc(96vw - 24px); max-height:calc(92dvh - 24px); object-fit:contain; }
+    .viewer-close { position:absolute; right:17px; top:17px; width:38px; height:38px; border:0; border-radius:50%; background:#fff; color:#213723; font-size:24px; cursor:pointer; z-index:2; }
+    @media (min-width:700px) {
+      main { width:min(100% - 48px, 900px); margin-top:30px; }
+      .hero-inner { padding:44px 0 38px; }
+      .content-block > p, .content-block > ul, .content-block > ol, .content-block > blockquote { padding:21px 24px; }
+      .gallery-card { flex-basis:250px; width:250px; }
+      .gallery--wide .gallery-card { flex-basis:320px; width:320px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } * { animation:none !important; transition:none !important; } }
+  </style>
+</head>
+<body id="top">
+<header class="topbar">
+<div class="topbar-inner">
+<div aria-hidden="true" class="brand-mark">Bio</div>
+<div class="brand-name">BioSTEMedia<span class="brand-sub">Media pembelajaran biologi</span></div>
+</div>
+</header>
+<section aria-labelledby="page-title" class="hero">
+<div class="hero-inner">
+<p class="eyebrow">Materi pembelajaran</p>
+<h1 id="page-title">Definisi dan Tingkat Keanekaragaman Hayati</h1>
+<p class="hero-desc">Pelajari variasi kehidupan mulai dari perbedaan genetik, antarspesies, hingga ekosistem melalui teks, gambar, dan tabel.</p>
+</div>
+</section>
+<div class="jump-wrap">
+<nav aria-label="Navigasi materi" class="jump-nav">
+<a href="#pengertian">Pengertian</a>
+<a href="#keanekaragaman-hayati-tingkat-genetik">Tingkat genetik</a>
+<a href="#keanekaragaman-hayati-tingkat-spesies">Tingkat spesies</a>
+<a href="#keanekaragaman-hayati-tingkat-ekosistem">Tingkat ekosistem</a>
+<a href="#pembahasan-lanjutan">Pembahasan lanjut</a>
+</nav>
+</div>
+<main>
+<div class="content-block" id="pengertian">
+<figure class="article-figure"><img alt="Infografik BioThink" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(1).png"/></figure>
+<div class="resource-card">
+<div aria-hidden="true" class="resource-icon">PPT</div>
+<div class="resource-copy"><strong>Panduan Pengumpulan Tugas.pptx</strong><span>Materi pendukung</span></div>
+<a class="resource-link" href="https://drive.google.com/open?authuser=2&amp;id=12hqfQ6I-Ow-3Wih1mHT48RZtMoMKODLX" rel="noopener noreferrer" target="_blank">Buka file <span aria-hidden="true">↗</span></a>
+</div>
+<div aria-label="Galeri gambar" class="gallery gallery--wide"><figure class="gallery-card"><img alt="Terumbu karang dan keanekaragaman hayati laut" loading="lazy" src="assets/intro-perairan.jpg"/><figcaption>Sumber: https://dkp.jatimprov.go.id/unit/bapl//news/view/4189</figcaption></figure><figure class="gallery-card"><img alt="Lahan persawahan di Indonesia" loading="lazy" src="assets/intro-lahan-sawah.jpg"/><figcaption>Sumber: https://www.ipb.ac.id/news/index/2025/09/pakar-ipb-university-tiga-juta-hektare-sawah-di-indonesia-belum-dilindungi-secara-formal/</figcaption></figure></div>
+<div class="content-block"><p>Istilah <strong>keanekaragaman hayati</strong> berasal dari kata <em><strong>biodiversity</strong></em><strong> atau biodiversitas</strong>. Konsep biodiversitas merujuk pada adanya variasi atau perbedaan karakteristik yang terdapat pada makhluk hidup. Keanekaragaman hayati digunakan untuk menjelaskan jumlah, variasi, serta variabilitas organisme yang hidup di suatu wilayah. Menurut Konvensi Perserikatan Bangsa-Bangsa tentang Keanekaragaman Hayati, keanekaragaman hayati adalah keragaman organisme hidup yang berasal dari berbagai ekosistem, seperti ekosistem daratan, laut, dan perairan lainnya, beserta seluruh kompleks ekologi yang mendukung keberadaan organisme tersebut. Ruang lingkup keanekaragaman hayati meliputi keanekaragaman tingkat genetik, spesies, dan ekosistem.</p></div>
+<div class="content-block"><p>Keanekaragaman hayati dapat ditemukan dalam berbagai bentuk dan memiliki tingkatan yang berbeda. Perbedaan tersebut dapat diamati mulai dari variasi dalam satu spesies, perbedaan antarspesies, hingga keberagaman ekosistem yang terbentuk dari interaksi antara makhluk hidup dan lingkungannya. Secara umum, keanekaragaman hayati dibedakan menjadi tiga tingkatan, yaitu <strong>keanekaragaman tingkat genetik, tingkat spesies, dan tingkat ekosistem</strong>. Ketiganya saling berkaitan dan menunjukkan beragamnya kehidupan yang terdapat di bumi. Untuk memperoleh gambaran awal mengenai ketiga tingkatan tersebut, perhatikan pengertian singkat pada setiap bagian berikut:</p></div>
+<div aria-label="Galeri gambar" class="gallery"><figure class="gallery-card"><img alt="Oryza sativa var. japonica Postiglione" loading="lazy" src="assets/padi-japonica.jpg"/><figcaption>Oryza sativa var. japonica Postiglione. Sumber: https://www.gbif.org</figcaption></figure><figure class="gallery-card"><img alt="Oryza sativa subsp. indica Shig.Kato" loading="lazy" src="assets/padi-indica.jpg"/><figcaption>Oryza sativa subsp. indica Shig.Kato. Sumber: https://www.gbif.org</figcaption></figure><figure class="gallery-card"><img alt="Oryza sativa var. glutinosa Blanco" loading="lazy" src="assets/padi-glutinosa.jpg"/><figcaption>Oryza sativa var. glutinosa Blanco. Sumber: https://www.gbif.org</figcaption></figure></div>
+<div class="content-block heading-block"><h2 id="keanekaragaman-hayati-tingkat-genetik"><a href="https://sites.google.com/view/biostemedia/materi/definisi-dan-tingkat-keanekaragaman-hayati?authuser=2#h.9yg6hwupznf6" rel="noopener noreferrer" target="_blank"></a>Keanekaragaman Hayati Tingkat Genetik</h2></div>
+<div class="content-block"><p>Keanekaragaman tingkat genetik merupakan variasi yang terjadi dalam satu spesies akibat adanya perbedaan susunan genetik antar individu. Variasi ini menyebabkan munculnya perbedaan sifat seperti warna, ukuran, bentuk, dan kemampuan adaptasi.</p></div>
+<div aria-label="Galeri gambar" class="gallery"><figure class="gallery-card"><img alt="Rosy-faced Lovebird (Agapornis roseicollis)" loading="lazy" src="assets/lovebird-roseicollis.jpg"/><figcaption>Rosy-faced Lovebird (Agapornis roseicollis). Sumber: https://www.inaturalist.org</figcaption></figure><figure class="gallery-card"><img alt="Lilian's Lovebird (Agapornis lilianae)" loading="lazy" src="assets/lovebird-lilianae.jpg"/><figcaption>Lilian's Lovebird (Agapornis lilianae). Sumber: https://www.inaturalist.org</figcaption></figure><figure class="gallery-card"><img alt="Fischer's Lovebird (Agapornis fischeri)" loading="lazy" src="assets/lovebird-fischeri.jpg"/><figcaption>Fischer's Lovebird (Agapornis fischeri). Sumber: https://www.inaturalist.org</figcaption></figure></div>
+<div class="content-block heading-block"><h2 id="keanekaragaman-hayati-tingkat-spesies"><a href="https://sites.google.com/view/biostemedia/materi/definisi-dan-tingkat-keanekaragaman-hayati?authuser=2#h.amhhlkozfysy" rel="noopener noreferrer" target="_blank"></a>Keanekaragaman Hayati Tingkat Spesies</h2></div>
+<div class="content-block"><p>Keanekaragaman jenis atau spesies merupakan variasi yang terdapat dalam kelompok atau populasi makhluk hidup yang berada pada suatu ekosistem atau wilayah tertentu.</p></div>
+<div aria-label="Galeri gambar" class="gallery"><figure class="gallery-card"><img alt="Laut" loading="lazy" src="assets/ekosistem-laut.jpg"/><figcaption>Laut. Sumber: https://baktinews.bakti.or.id</figcaption></figure><figure class="gallery-card"><img alt="Hutan" loading="lazy" src="assets/ekosistem-hutan.jpg"/><figcaption>Hutan. Sumber: https://www.ykan.or.id</figcaption></figure></div>
+<div class="content-block heading-block"><h2 id="keanekaragaman-hayati-tingkat-ekosistem"><a href="https://sites.google.com/view/biostemedia/materi/definisi-dan-tingkat-keanekaragaman-hayati?authuser=2#h.qftay1vvhube" rel="noopener noreferrer" target="_blank"></a>Keanekaragaman Hayati Tingkat Ekosistem</h2></div>
+<div class="content-block"><p>Keanekaragaman tingkat ekosistem merupakan keberagaman berbagai jenis lingkungan atau tempat hidup yang terdapat dalam suatu wilayah. Keanekaragaman ekosistem mengacu pada kompleksitas hubungan antara berbagai spesies yang membentuk suatu ekosistem serta interaksi dinamis antara organisme dengan lingkungannya. </p></div>
+<div class="content-block"><p>Setelah mengenal pengertian dari masing-masing tingkatan keanekaragaman hayati, mari pelajari lebih lanjut karakteristik dan contoh dari setiap tingkatan. Pembahasan berikut akan membantu kamu memahami perbedaan antara keanekaragaman tingkat genetik, spesies, dan ekosistem secara lebih mendalam. </p></div>
+<div class="content-block"><p>Keanekaragaman genetik merupakan hasil dari rekombinasi materi genetik (DNA) selama proses pewarisan, mutasi, aliran gen, dan drift genetik, yang menghasilkan variasi pada urutan DNA, profil epigenetik, struktur protein atau isoenzim, sifat fisiologis, dan sifat morfologis. Keanekaragaman tingkat genetik berperan penting dalam membantu spesies beradaptasi terhadap perubahan lingkungan, mempertahankan kemampuan hidup dan berkembang, serta menghadapi berbagai ancaman seperti penyakit dan perubahan iklim.</p><br/><p>Variasi genetik juga menjadi dasar terbentuknya keanekaragaman spesies dan ekosistem karena memungkinkan munculnya garis keturunan baru. Namun, keanekaragaman genetik dapat dipengaruhi oleh perubahan lingkungan dan perkawinan silang. Ketika kondisi lingkungan suatu komunitas berubah dari waktu ke waktu, individu yang memiliki sifat lebih sesuai dengan kondisi lingkungan baru akan memiliki peluang lebih besar untuk bertahan hidup dan menghasilkan keturunan yang juga mampu beradaptasi dengan lingkungan tersebut. Contohnya, pada ngengat merica (<em>Biston betularia</em>) terdapat variasi warna, yaitu warna terang dan warna gelap. Ketika pencemaran industri mengubah lingkungan dan membuat permukaan pohon menjadi lebih gelap, individu warna gelap menjadi lebih tersamarkan dari predator, terutama burung. Karena lebih sulit terlihat, individu tersebut cenderung memiliki peluang lebih besar untuk bertahan hidup dan bereproduksi. Akibatnya, frekuensi ngengat berwarna gelap meningkat dalam populasi di wilayah industri. Sebaliknya, setelah tingkat pencemaran menurun dan lingkungan menjadi lebih cerah, frekuensi warna gelap kembali menurun.</p><br/><p>Contoh keanekaragaman gen dapat ditemukan pada berbagai varietas padi, mangga, atau ayam yang memiliki ciri berbeda meskipun masih termasuk dalam satu spesies. Pada ayam, keanekaragaman gen dapat menyebabkan adanya perbedaan sifat pada individu dalam satu spesies. Perbedaan tersebut tampak pada ciri fisik, seperti warna dan pola bulu, tipe jengger, warna kulit, warna kaki, serta ukuran tubuh. Pada ayam lokal Indonesia, variasi fenotipik dan genetik yang cukup besar menunjukkan pentingnya karakterisasi ayam untuk seleksi, pemuliaan, dan konservasi.</p></div>
+<figure class="article-figure"><img alt="Ayam Arab" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed.jpg"/><figcaption><p>Ayam Arab</p><p>Sumber: Facebook Herman Suherman, 2025.</p></figcaption></figure>
+<figure class="article-figure"><img alt="Ayam Merawang" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(2).jpg"/><figcaption><p>Ayam Merawang<br/>Sumber: ditjenpkh.pertanian.go.id</p></figcaption></figure>
+<figure class="article-figure"><img alt="Ayam Pelung" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(3).jpg"/><figcaption><p>Ayam Pelung</p><p>Sumber: id.wikipedia.org</p></figcaption></figure>
+<figure class="article-figure"><img alt="Ayam Cemani" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(4).jpg"/><figcaption><p>Ayam Cemani</p><p>Sumber: www.kompas.com</p></figcaption></figure>
+<div class="content-block"><p>Perbedaan karakteristik beberapa jenis ayam di atas dapat dilihat pada tabel berikut:</p></div>
+<figure class="article-figure"><img alt="Tabel perbandingan beberapa jenis ayam" class="figure-img figure-table" data-zoomable="true" loading="lazy" src="assets/unnamed(5).png"/></figure>
+<div class="content-block"><p>Keanekaragaman pada tingkat spesies mencakup berbagai variasi yang terdapat di antara spesies yang masih berada dalam satu familia. Keanekaragaman hayati tingkat jenis atau antarspesies lebih mudah dikenali dibandingkan keanekaragaman tingkat gen karena perbedaan karakteristik antarspesies umumnya tampak lebih jelas. Keanekaragaman pada tingkat spesies dapat ditunjukkan melalui adanya perbedaan karakteristik antarspesies, yang meliputi perbedaan morfologi, ekologi, dan genetik, serta adanya isolasi reproduksi. Perbedaan morfologi berkaitan dengan ciri fisik organisme, sedangkan perbedaan ekologi berkaitan dengan kondisi lingkungan dan interaksi organisme dengan lingkungannya. Perbedaan genetik menunjukkan adanya variasi pada materi genetik antarspesies, sementara isolasi reproduksi menunjukkan adanya hambatan reproduksi antara kelompok organisme yang berbeda. Contohnya, kuda (<em>Equus caballus</em>) memiliki 64 kromosom, sedangkan keledai (<em>Equus asinus</em>) memiliki 62 kromosom dapat menghasilkan keturunan hibrida apabila dikawinkan. Perkawinan silang antara keledai jantan dan kuda betina menghasilkan bagal (mule), sedangkan kuda jantan dan keledai betina menghasilkan hinny. Keduanya umumnya memiliki 63 kromosom, yaitu hasil penggabungan 32 kromosom dari kuda dan 31 kromosom dari keledai. Jumlah kromosom yang ganjil menyebabkan kromosom sulit berpasangan secara normal selama meiosis sehingga mule dan hinny umumnya bersifat infertil. Sterilitas tersebut berkaitan dengan perbedaan kromosom kedua spesies yang dapat menghambat pembentukan gamet melalui meiosis.</p></div>
+<figure class="article-figure"><img alt="Kuda (Equus caballus)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(6).jpg"/><figcaption><p>Kuda (<em>Equus caballus</em>)</p><p>Sumber: © Copper (www.inaturalist.org)</p></figcaption></figure>
+<figure class="article-figure"><img alt="Keledai (Equus asinus)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(7).jpg"/><figcaption><p>Keledai (<em>Equus asinus</em>)</p><p>Sumber: ©Justyn Stahl (www.inaturalist.org)</p></figcaption></figure>
+<figure class="article-figure"><img alt="Mule (Equus caballus × Equus asinus)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(8).jpg"/><figcaption><p>Mule (<em>Equus caballus × Equus asinus</em>)</p><p>Sumber: © Lena Chow (www.inaturalist.org)</p></figcaption></figure>
+<figure class="article-figure"><img alt="Hinny (Equus asinus × Equus caballus)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(9).jpg"/><figcaption><p>Hinny (<em>Equus asinus x Equus caballus)</em></p><p>Sumber: © Creative Commons (id.wikipedia.org)</p></figcaption></figure>
+<div class="content-block"><p>Keanekaragaman spesies tidak hanya ditentukan oleh banyaknya spesies yang ditemukan (<em>species richness</em>), tetapi juga oleh kelimpahan relatif atau tingkat kemerataan jumlah individu setiap spesies (<em>species evenness</em>). Dengan demikian, wilayah yang memiliki banyak spesies belum tentu memiliki keanekaragaman tinggi apabila hanya satu spesies yang sangat dominan. Semakin tinggi jumlah spesies dalam suatu ekosistem, maka semakin stabil pula ekosistem tersebut. Hal ini terjadi karena setiap spesies memiliki fungsi tertentu dalam rantai makanan maupun proses ekologis lainnya. Hilangnya satu spesies dapat memengaruhi populasi organisme lain dan mengganggu keseimbangan lingkungan. Salah satu contoh keanekaragaman tingkat spesies dapat ditemukan pada genus <em>Solanum</em>, yang memiliki berbagai spesies dengan karakteristik morfologi yang berbeda. Beberapa contohnya disajikan pada tabel berikut:</p></div>
+<figure class="article-figure"><img alt="Tabel perbandingan karakteristik tomat, kentang, dan terong" class="figure-img figure-table" data-zoomable="true" loading="lazy" src="assets/unnamed(10).png"/></figure>
+<figure class="article-figure"><img alt="Tomat (Solanum lycopersicum)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(11).jpg"/><figcaption><p>Tomat (<em>Solanum lycopersicum</em>)</p><p>Sumber: bbpplembang.bppsdmp.pertanian.go.id</p></figcaption></figure>
+<figure class="article-figure"><img alt="Kentang (Solanum tuberosum)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(12).jpg"/><figcaption><p>Kentang (<em>Solanum tuberosum</em>)</p><p>Sumber: www.botanic.cam.ac.uk</p></figcaption></figure>
+<figure class="article-figure"><img alt="Terong (Solanum melongena)" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(13).jpg"/><figcaption><p>Terong (<em>Solanum </em><em>melongena</em>)</p><p>Sumber: distankan.bulelengkab.go.id</p></figcaption></figure>
+<figure class="article-figure"><a href="https://www.ipb.ac.id/news/index/2025/06/kentang-berwarna-hijau-dan-bertunas-mengandung-racun-ini-penjelasan-pakar-ipb-university/" rel="noopener noreferrer" target="_blank"><img alt="Infografik BioInsight tentang kentang" class="figure-img" data-zoomable="true" loading="lazy" src="assets/unnamed(14).png"/></a></figure>
+<div class="content-block"><p>Istilah “ekosistem” pertama kali diperkenalkan pada tahun 1935 oleh Sir Arthur George Tansley (1871–1955), seorang ahli botani asal Inggris yang juga dikenal sebagai salah satu pelopor dalam bidang ekologi. Tansley mendefinisikan ekosistem sebagai suatu sistem fisik khusus yang tersusun atas organisme dan komponen anorganik yang berada dalam kondisi relatif stabil, bersifat terbuka, serta memiliki beragam ukuran dan jenis. Menurutnya, ekosistem tidak hanya mencakup keseluruhan organisme, tetapi juga seluruh faktor fisik yang membentuk lingkungan tempat organisme tersebut hidup. Keanekaragaman ekosistem mencakup variasi pada tingkat ekosistem secara keseluruhan, termasuk beragam habitat dan komunitas ekologis yang terdapat dalam suatu wilayah. Keberagaman tersebut berperan dalam memengaruhi aliran energi dan nutrisi, menjaga kestabilan ekosistem, serta mendukung penyediaan berbagai jasa ekosistem. Keanekaragaman ekosistem dapat terbentuk dan dipengaruhi oleh berbagai kondisi lingkungan yang terdapat di dalamnya. Untuk memahami hal tersebut, ekosistem dapat ditinjau berdasarkan komponen penyusunnya, yaitu komponen biotik dan abiotik.</p><br/><p>Komponen biotik dan abiotik dalam ekosistem saling berinteraksi dan memiliki hubungan yang erat. Komponen biotik mencakup seluruh makhluk hidup, mulai dari mikroorganisme hingga organisme tingkat tinggi, sedangkan komponen abiotik meliputi berbagai unsur tidak hidup yang terdapat di lingkungan. Keberlangsungan hidup organisme dipengaruhi oleh kondisi lingkungan abiotiknya. Ketersediaan dan kondisi faktor abiotik, seperti suhu, cahaya matahari, kelembapan, curah hujan, dan air, dapat memengaruhi persebaran serta kelimpahan organisme dalam suatu ekosistem. Dengan demikian, perubahan pada kondisi lingkungan dapat turut memengaruhi kehidupan dan keberadaan organisme di dalamnya. Selain tersusun atas komponen biotik dan abiotik yang saling berinteraksi, suatu ekosistem memiliki beberapa karakteristik yang menunjukkan berlangsungnya proses kehidupan di dalamnya. Menurut Molles dan Sher (2018), ekosistem memiliki beberapa ciri utama, yaitu:</p><ol><li><p>Memiliki sumber energi yang tersedia secara berkelanjutan.</p></li><li><p>Organisme dapat menyimpan energi dalam bentuk materi organik.</p></li><li><p>Terjadi siklus materi antara organisme dan lingkungan secara berkelanjutan.</p></li><li><p>Energi mengalir melalui tingkat-tingkat dalam ekosistem, dari satu tingkat ke tingkat lainnya.</p></li></ol><br/><p>Jenis-jenis ekosistem terbagi menjadi dua, yaitu ekosistem akuatik dan ekosistem terestrial. Namun, campur tangan manusia dalam seluruh ekosistem di planet ini berlangsung secara intensif dan meluas, sehingga tidak semua ekosistem terestrial dan akuatik tetap dalam kondisi alami. Oleh karena itu, ekosistem yang telah mengalami perubahan disebut sebagai ekosistem buatan, ekosistem hasil rekayasa manusia, atau ekosistem antropogenik. Beberapa contoh ekosistem disajikan pada tabel berikut:</p></div>
+<figure class="article-figure"><img alt="Tabel jenis ekosistem terestrial dan akuatik" class="figure-img figure-table" data-zoomable="true" loading="lazy" src="assets/unnamed(15).png"/></figure>
+</div>
+</main>
+<footer class="footer">BioSTEMedia · Definisi dan Tingkat Keanekaragaman Hayati</footer>
+<button aria-label="Kembali ke atas" class="to-top" title="Kembali ke atas" type="button">↑</button>
+<dialog aria-label="Tampilan gambar lebih besar" id="image-viewer">
+<div class="viewer-inner"><button aria-label="Tutup gambar" class="viewer-close" type="button">×</button><img alt="Gambar diperbesar" src=""/></div>
+</dialog>
+<script>
+    (function () {
+      const topButton = document.querySelector('.to-top');
+      topButton.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+      const dialog = document.getElementById('image-viewer');
+      const viewerImage = dialog.querySelector('img');
+      const closeButton = dialog.querySelector('.viewer-close');
+      document.querySelectorAll('main img[data-zoomable="true"], main img.figure-img').forEach((img) => {
+        img.addEventListener('click', () => {
+          viewerImage.src = img.currentSrc || img.src;
+          viewerImage.alt = img.alt || 'Gambar diperbesar';
+          if (typeof dialog.showModal === 'function') dialog.showModal();
+          else window.open(img.src, '_blank', 'noopener');
+        });
+      });
+      closeButton.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && dialog.open) dialog.close(); });
+      // Derive a section ID for the final detailed discussion from the source's transition paragraph.
+      const transition = Array.from(document.querySelectorAll('main p')).find(p => p.textContent.trim().startsWith('Setelah mengenal pengertian'));
+      if (transition) {
+        const section = transition.closest('.content-block');
+        if (section) section.id = 'pembahasan-lanjutan';
+      }
+    })();
+  </script>
+</body>
+</html>
